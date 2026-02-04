@@ -1,10 +1,8 @@
-"""
-Usage: python convert_parquet_to_jsonl.py /path/to/input/dir -o /path/to/output/dir
-"""
 #!/usr/bin/env python3
 """
 Convert parquet files with map types to JSONL format.
 This script handles parquet files that contain map types which pandas cannot read directly.
+Usage: python parquet2jsonl.py /path/to/input/dir -o /path/to/output/dir
 """
 
 import pyarrow.parquet as pq
